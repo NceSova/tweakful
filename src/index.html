@@ -3,7 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tweakful</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img
+            src="<%=require('./assets/images/logo.png')%>"
+            width="64px"
+            height="64px" />
+          <span>Tweakful</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Возможности</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Помощь</a></li>
+          </ul>
+        </nav>
+        <button class="book-button">
+          Забронировать звонок
+          <img
+            class="book-icon"
+            alt=""
+            src="<%=require('./assets/icons/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg')%>" />
+        </button>
+      </div>
+    </header>
+  </body>
 </html>
