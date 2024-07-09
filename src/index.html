@@ -7,31 +7,62 @@
   </head>
   <body>
     <header>
-      <div class="header-content">
-        <div class="logo">
-          <img
-            src="<%=require('./assets/images/logo.png')%>"
-            width="64px"
-            height="64px" />
-          <span>Tweakful</span>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Возможности</a></li>
-            <li><a href="#">Цены</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Помощь</a></li>
-          </ul>
-        </nav>
-        <button class="book-button">
-          Забронировать звонок
-          <img
-            class="book-icon"
-            alt=""
-            src="<%=require('./assets/icons/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg')%>" />
-        </button>
+      <div class="logo">
+        <img
+          src="<%=require('./assets/images/logo.png')%>"
+          width="64px"
+          height="64px" />
+        <span>Tweakful</span>
       </div>
+      <nav>
+        <a class="nav-icon">
+          <img
+            src="<%=require('./assets/icons/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg')%>"
+            alt="Navigation open icon" />
+        </a>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Возможности</a></li>
+          <li><a href="#">Цены</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Помощь</a></li>
+        </ul>
+      </nav>
+      <button class="book-button">
+        Забронировать звонок
+        <img
+          class="book-icon"
+          alt=""
+          src="<%=require('./assets/icons/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg')%>" />
+      </button>
     </header>
+    <section class="hero">
+      <div class="hero__text">
+        <h1>Единое место для управления любым бизнесом</h1>
+        <h2>
+          Занимайтесь только улучшением бизнеса, а его управление оставьте нам.
+          Команда профессиональных менеджеров готова вам помочь!
+        </h2>
+        <div class="hero__text__actions">
+          <button class="text-action">
+            <button class="book-button">
+              Забронировать звонок
+              <img
+                class="book-icon"
+                alt=""
+                src="<%=require('./assets/icons/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg')%>" />
+            </button>
+            <p class="p16">Поторопитесь! Места ограничены!</p>
+          </button>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img
+          src="<%=require('./assets/images/hero-image.png')%>"
+          alt="Молодая девушка-бизнесмен из Индии"
+          width="300px"
+          height="auto" />
+      </div>
+    </section>
   </body>
 </html>
