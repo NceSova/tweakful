@@ -18,38 +18,75 @@
   --color-text-links: #1e1e1e;
 }
 
-.p16 {
-  font-size: 1rem;
-  font-family: "Inter", sans-serif;
+@media screen and (min-width: 1000px) {
+  .p16 {
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+  }
+  .p20 {
+    font-size: 1.25rem;
+    font-family: "Inter", sans-serif;
+  }
+  .p24 {
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+  }
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 4rem;
+  }
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 3.25rem;
+  }
+  h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.625rem;
+  }
+  h4 {
+    font-family: "Inter", sans-serif;
+  }
+  h5 {
+    font-family: "Inter", sans-serif;
+  }
+  h6 {
+    font-family: "Inter", sans-serif;
+  }
 }
-.p20 {
-  font-size: 1.25rem;
-  font-family: "Inter", sans-serif;
-}
-.p24 {
-  font-size: 1.5rem;
-  font-family: "Inter", sans-serif;
-}
-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 4rem;
-}
-h2 {
-  font-family: "Inter", sans-serif;
-  font-size: 3.25rem;
-}
-h3 {
-  font-family: "Inter", sans-serif;
-  font-size: 2.625rem;
-}
-h4 {
-  font-family: "Inter", sans-serif;
-}
-h5 {
-  font-family: "Inter", sans-serif;
-}
-h6 {
-  font-family: "Inter", sans-serif;
+@media screen and (max-width: 1000px) {
+  .p16 {
+    font-size: 0.8rem;
+    font-family: "Inter", sans-serif;
+  }
+  .p20 {
+    font-size: 1.25rem;
+    font-family: "Inter", sans-serif;
+  }
+  .p24 {
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+  }
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+  }
+  h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 0.5rem;
+  }
+  h4 {
+    font-family: "Inter", sans-serif;
+  }
+  h5 {
+    font-family: "Inter", sans-serif;
+  }
+  h6 {
+    font-family: "Inter", sans-serif;
+  }
 }
 
 * {
@@ -66,6 +103,7 @@ body {
 header {
   min-height: 80px;
   position: sticky;
+  top: 0px;
   display: grid;
   grid-template-columns: 5fr 1fr;
   grid-template-rows: 80px 1fr;
@@ -127,7 +165,7 @@ button {
   font-family: "Inter", sans-serif;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1000px) {
   header {
     display: flex;
     padding: 0px min(8%, 120px);
@@ -150,5 +188,78 @@ button {
   .book-button {
     flex: 1;
     align-self: center;
+  }
+}
+
+.hero {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.hero__text {
+  max-width: 600px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  & h1 {
+    max-width: 500px;
+  }
+}
+
+.text-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & p {
+    padding: 0.5rem 0px;
+  }
+}
+
+.hero__image {
+  padding: 1rem;
+  & img {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+    min-height: 40rem;
+    padding: 5rem 5rem;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+  }
+
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    & h1 {
+      max-width: 700px;
+    }
+  }
+
+  .hero__image {
+    height: 100%;
+    padding: 1rem;
+    & img {
+      width: min(30rem, 100%);
+      min-height: 30rem;
+    }
+  }
+
+  .text-action {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    & button {
+      height: 4rem;
+      max-width: 10rem;
+    }
   }
 }
