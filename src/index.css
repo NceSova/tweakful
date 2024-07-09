@@ -103,6 +103,7 @@ body {
 header {
   min-height: 80px;
   position: sticky;
+  background-color: #fff;
   top: 0px;
   display: grid;
   grid-template-columns: 5fr 1fr;
